@@ -3,7 +3,7 @@ const app = express();
 // const path = require('path');
 
 // Rutas
-// app.use(express.static('public'));
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.sendFile((__dirname + '/views/index.html'))
