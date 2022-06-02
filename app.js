@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
-const path = require('path');
+// const path = require('path');
 
 // Rutas
 // app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/views/index.html'))
+    res.sendFile((__dirname + '/views/index.html'))
 });
 
 // Levantamos el servidor con app.listen, recibe dos parámetros, 
