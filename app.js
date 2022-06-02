@@ -3,14 +3,11 @@ const app = express();
 const path = require('path');
 
 // Rutas
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/views/index.html'))
 });
-
-
-
 
 // Levantamos el servidor con app.listen, recibe dos parámetros, 
 // el PUERTO y opcionalemente un callback que se ejecutará si el seridor se inicia
